@@ -3,6 +3,7 @@ import random
 clearanceScale = {0: 'No Access', 1: 'Level 1 Clearance', 2: 'Level 2 Clearance',3: 'Level 3 Clearance', 4: 'Level 4 Clearance', 5: 'Top Level Clearance'}
 
 class Silph:
+
 	clearance = 0
 	login1 = False 
 	def list(self):
@@ -19,10 +20,11 @@ while(True):
 		silph.login()
 	elif userInput == "10237464":
 		silph.login1 = True
+		print "Connection successful"
 	elif userInput == "ls":
 		if silph.login1 != True:
 			print "You need to log in to use this command"
 		else:
-			silph.ist()
+			silph.list()
 	elif userInput == "quit":
 		quit()
