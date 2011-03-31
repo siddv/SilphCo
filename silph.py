@@ -10,15 +10,14 @@ class Silph:
 		print "\n/docs\n/survailence\n"	
 	def login(self):
 		print "Please enter your Silph unified access key"
-
 silph = Silph()
 
 print "Welcome to the Silph Co. mainframe"
 while(True):
 	userInput = raw_input(">")
-	if userInput == "ssh silph.siddv.net":
+	if userInput == "ssh silph.com":
 		silph.login()
-	elif userInput == "10237464":
+	elif userInput == "LJ43":
 		silph.login1 = True
 		print "Connection successful"
 	elif userInput == "ls":
